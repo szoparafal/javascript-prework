@@ -1,5 +1,5 @@
 {
-  "name": "learning-git",
+  "name": "javascript-prework",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/szoparafal/learning-git.git"
+    "url": "git+https://github.com/szoparafal/javascript-prework.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/szoparafal/learning-git/issues"
+    "url": "https://github.com/szoparafal/javascript-prework/issues"
   },
-  "homepage": "https://github.com/szoparafal/learning-git#readme",
+  "homepage": "https://github.com/szoparafal/javascript-prework#readme",
   "devDependencies": {
     "browser-sync": "^2.27.7"
   },
