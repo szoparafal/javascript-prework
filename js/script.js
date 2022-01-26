@@ -1,9 +1,7 @@
-function playGame(playerInput) {
+{function playGame(playerInput) {
+    clearMessages()
 
-    function clearMessages()
-
-
-function getMoveName(randomNumber) {
+    function getMoveName(randomNumber) {
         if (randomNumber == 1) {
             return 'kamień';
         } else if (randomNumber == 2) {
@@ -13,11 +11,11 @@ function getMoveName(randomNumber) {
         }
     }
 
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
 
     console.log('Wylosowana liczba to: ' + randomNumber);
 
-    let computerMove = getMoveName(randomNumber);
+    const computerMove = getMoveName(randomNumber);
 
 
     printMessage(' Mój ruch to ' + computerMove);
@@ -26,7 +24,7 @@ function getMoveName(randomNumber) {
 
     console.log('Gracz wpisał: ' + playerInput);
 
-    let playerMove = getMoveName(playerInput);
+    const playerMove = getMoveName(playerInput);
 
 
     printMessage(' Twój ruch to: ' + playerMove);
@@ -56,33 +54,16 @@ function getMoveName(randomNumber) {
         }
     }
     displayResult(computerMove, playerMove);
-
-
-function buttonClicked(){
-    playGame('kamień');
-}
- 
-  let testButton = document.getElementById('play-rock');
- 
-  testButton.addEventListener('click', buttonClicked);
-
-
-  function buttonClicked(){
-    playGame('papier');
-  }
- 
-  let testButton = document.getElementById('play-paper');
- 
-  testButton.addEventListener('click', buttonClicked);
-
- 
-  function buttonClicked(){
-    playGame('nożyce');
-  }
- 
-  let testButton = document.getElementById('play-scissors');
- 
-  testButton.addEventListener('click', buttonClicked);
 }
 
+     
+
+const rockButton = document.getElementById('play-rock');
+rockButton.addEventListener('click', function() {playGame(1)});
+
+const paperButton = document.getElementById('play-paper');
+paperButton.addEventListener('click', function() {playGame(2)});
+
+const scissorsButton = document.getElementById('play-scissors');
+scissorsButton.addEventListener('click', function() {playGame(3)});
       
